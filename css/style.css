@@ -13,8 +13,26 @@ body{
     font-family: var(--sec-font);
     background-color: #f1f1f1;
     color: #333333;
-    font-size: 18px;
+    transition: all 0.3s ease-in-out;
+
 }
+
+@keyframes fadeIn {
+    0% {
+      opacity: 5;
+    }
+    50% {
+      opacity: 0.5;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+.img-container img:hover{
+    animation: fadeIn 0.5s ease-in-out ;
+}
+
 
 h1, h2, h3, h4, h5, h6{
     font-family: var(--title-font) !important;
@@ -24,6 +42,7 @@ h1, h2, h3, h4, h5, h6{
 .btn{
     background-color: #1e1e1e !important;
     color: #f1f1f1 !important;
+    transition: all 0.3s ease-in-out !important;
 }
 .btn:hover{
     background-color: #f1f1f1 !important;
@@ -41,4 +60,19 @@ h1, h2, h3, h4, h5, h6{
     color: #f1f1f1 !important;
     outline: none !important;
     border: none !important;
+}
+
+
+.service{
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    padding: 10px 0px 10px 0px;
+    border-radius: 10px;
+}
+.service:hover{
+    background-color: #1e1e1e;
+    color: #f1f1f1;
+}
+.service:hover .title{
+    color: #f1f1f1  !important;
 }
